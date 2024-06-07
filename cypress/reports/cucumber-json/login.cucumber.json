@@ -1,0 +1,74 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Feature to test multiple scenarios",
+    "line": 1,
+    "id": "feature-to-test-multiple-scenarios",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "feature-to-test-multiple-scenarios;success-sign-up",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Success Sign Up",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "a user navigates to login page",
+            "result": {
+              "status": "passed",
+              "duration": 964000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "First Name",
+                      "Last Name",
+                      "email",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Test",
+                      "user",
+                      "test11@tests.com",
+                      "Test1234*"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user submits the below details",
+            "result": {
+              "status": "passed",
+              "duration": 989000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the page contains text \"Logout\"",
+            "result": {
+              "status": "failed",
+              "duration": 4010000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#logout`, but never found it.\n    at Page.validateText (cypress/e2e/pages/Page.ts:23:25)\n    at loginPage.checkText (cypress/e2e/pages/login/loginPage.ts:26:13)\n    at Context.eval (cypress/e2e/step_definitions/login/loginSteps.ts:25:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
