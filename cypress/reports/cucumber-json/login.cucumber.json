@@ -1,70 +1,118 @@
 [
   {
     "keyword": "Feature",
-    "name": "Feature to test multiple scenarios",
+    "name": "Feature to test multiple login scenarios",
     "line": 1,
-    "id": "feature-to-test-multiple-scenarios",
+    "id": "feature-to-test-multiple-login-scenarios",
     "tags": [],
     "uri": "login.feature",
     "elements": [
       {
-        "id": "feature-to-test-multiple-scenarios;success-sign-up",
+        "id": "feature-to-test-multiple-login-scenarios;success-login",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Success Sign Up",
-        "tags": [],
+        "line": 13,
+        "name": "Success Login",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 4
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 4,
+            "line": 6,
             "name": "a user navigates to login page",
             "result": {
               "status": "passed",
-              "duration": 964000000
+              "duration": 958000000
             }
           },
           {
-            "arguments": [
-              {
-                "rows": [
-                  {
-                    "cells": [
-                      "First Name",
-                      "Last Name",
-                      "email",
-                      "password"
-                    ]
-                  },
-                  {
-                    "cells": [
-                      "Test",
-                      "user",
-                      "test11@tests.com",
-                      "Test1234*"
-                    ]
-                  }
-                ]
-              }
-            ],
+            "arguments": [],
             "keyword": "When ",
             "line": 7,
-            "name": "user submits the below details",
+            "name": "user enter a valid \"test11@tests.com\" and \"Test1234*\"",
             "result": {
               "status": "passed",
-              "duration": 989000000
+              "duration": 568000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user clicks on submit",
+            "result": {
+              "status": "passed",
+              "duration": 86000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "the page contains text \"Logout\"",
+            "line": 9,
+            "name": "the page contains text \"Contact List App\"",
             "result": {
-              "status": "failed",
-              "duration": 4010000000,
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#logout`, but never found it.\n    at Page.validateText (cypress/e2e/pages/Page.ts:23:25)\n    at loginPage.checkText (cypress/e2e/pages/login/loginPage.ts:26:13)\n    at Context.eval (cypress/e2e/step_definitions/login/loginSteps.ts:25:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "feature-to-test-multiple-login-scenarios;success-login",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Success Login",
+        "tags": [
+          {
+            "name": "@test",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "a user navigates to login page",
+            "result": {
+              "status": "passed",
+              "duration": 468000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "user enter a valid \"test1@tests.com\" and \"Test1234*\"",
+            "result": {
+              "status": "passed",
+              "duration": 554000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "user clicks on submit",
+            "result": {
+              "status": "passed",
+              "duration": 84000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the page contains text \"Contact List App\"",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
             }
           }
         ]

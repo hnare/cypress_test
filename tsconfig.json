@@ -1,13 +1,11 @@
 {
   "compilerOptions": {
-    "baseUrl": "../node_modules",
-    "types": ["cypress"]
+    "baseUrl": "../node_modules"
   },
   "include": [
     "cypress/*.js",
     "cypress/e2e/pages/page.ts",
-    "cypress/support/commands.ts"
-  ],
+    "cypress/support/commands.ts"],
   "exclude": [
     "node_modules"
   ],

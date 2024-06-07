@@ -1,9 +1,10 @@
 import {Page} from "../Page";
 
-export class loginPage extends Page{
+export class signupPage extends Page{ 
     constructor() {
         const elements = {
             inputFirstName: '#firstName',
+            inputLastName: '#lastName',
             inputEmailName: '#email',
             inputPassword: '#password',
             submitBtn: '#submit',
@@ -30,6 +31,10 @@ export class loginPage extends Page{
         this.type(this.elements.inputFirstName, userName)
     }
 
+    public fillLastName(userName){
+        this.type(this.elements.inputLastName, userName)
+    }
+
     public fillEmail(userName){
         this.type(this.elements.inputEmailName, userName)
     }
@@ -42,18 +47,10 @@ export class loginPage extends Page{
         this.clickOn(this.elements.submitBtn)
     }
 
-    public clickLogin(){
-        this.clickOn(this.elements.submitBtn)
-    }
-
     public clickLogout(){
         this.clickOn(this.elements.logout)
     }
 
-    public submitLogin(email: string,password: string){
-        this.type(this.elements.inputEmailName, email)
-        this.type(this.elements.inputPassword, password)
-      }
     
 
 }

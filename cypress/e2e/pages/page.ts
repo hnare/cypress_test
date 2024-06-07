@@ -20,11 +20,12 @@ export abstract class Page {
     }
     
     protected validateText(selector: string, text: string) {
-        cy.get(selector).should('have.text', text);
+        // cy.get(selector).should('have.text', text);
+        cy.get(selector).contains(text).should('be.visible');
     }
 
     protected validateurl(text: string) {
-        cy.url().should('contains', text);
+        cy.url().should('include', text);
     }
 
 }

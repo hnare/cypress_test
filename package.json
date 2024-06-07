@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cypress:run:tag": "cypress run --env TAGS=@login --browser chrome",
+    "report": "node cucumber-html-report.js",
+    "report:clean": "rm -rf cypress/reports/*"
   },
   "keywords": [
     "cypress",
@@ -20,6 +24,7 @@
     "cypress": "^13.11.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-xpath": "^2.0.1",
+    "multiple-cucumber-html-reporter": "^3.6.2",
     "typescript": "^5.4.5"
   },
   "cypress-cucumber-preprocessor": {

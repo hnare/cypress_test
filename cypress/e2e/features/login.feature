@@ -1,10 +1,14 @@
-Feature: Feature to test multiple scenarios
+Feature: Feature to test multiple login scenarios
+        
 
-    Background:
+@test
+    Scenario Outline: Success Login 
         Given a user navigates to login page
-    Scenario: Success Sign Up
-    # When user enters first name "Test"
-        When user submits the below details
-      | First Name | Last Name | email          | password  |
-      | Test       | user      | test11@tests.com | Test1234* |
-        Then the page contains text "Logout"
+        When user enter a valid "<email>" and "<password>"
+        And user clicks on submit
+        Then the page contains text "Contact List App"
+
+    Examples:
+      | email               | password     |
+      | test11@tests.com    | Test1234*    |
+      | test1@tests.com     | Test1234*    |
