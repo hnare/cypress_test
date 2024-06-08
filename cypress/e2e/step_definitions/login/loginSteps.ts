@@ -19,13 +19,20 @@ Then('the page contains text {string}', (text:string) =>{
     login.checkText(text)
 })
 
-Then('user enter a valid {string} and {string}', (email:string,password:string) =>{
+Then('user enters {string} and {string}', (email:string,password:string) =>{
   login.submitLogin(email, password)
 })
 
 Then('user should be redirected to the contact list {string} page', (url: string) => {
   login.validateurl(url);
 });
+
+Then('user is presented with error message {string}', (text: string) => {
+  login.checkErrorMessage(text)
+});
+
+
+
 
 
 

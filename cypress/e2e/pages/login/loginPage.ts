@@ -9,6 +9,7 @@ export class loginPage extends Page{
             inputPassword: '#password',
             submitBtn: '#submit',
             logout:'#logout',
+            errorMessage: '#error',
             title: 'h1'
         }
         super(elements);
@@ -25,6 +26,10 @@ export class loginPage extends Page{
 
     public checkText(text : string) {
         this.validateText(this.elements.title, text)
+    }
+
+    public checkErrorMessage(text : string) {
+        this.validateText(this.elements.errorMessage, text)
     }
   
     public fillFirstName(userName){

@@ -1,17 +1,17 @@
 [
   {
     "keyword": "Feature",
-    "name": "Get Contact",
+    "name": "Update Contact",
     "line": 1,
-    "id": "get-contact",
+    "id": "update-contact",
     "tags": [],
-    "uri": "GetContacts.feature",
+    "uri": "UpdateContact.feature",
     "elements": [
       {
-        "id": "get-contact;verify-api-response",
+        "id": "update-contact;update-a-user-and-verify-response",
         "keyword": "Scenario",
         "line": 5,
-        "name": "Verify API Response",
+        "name": "Update a user and verify response",
         "tags": [
           {
             "name": "@api",
@@ -24,30 +24,30 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 6,
-            "name": "I make a GET request to \"/api/users/2\"",
+            "name": "I make a PUT request to \"/api/users/2\"",
             "result": {
               "status": "passed",
-              "duration": 303000000
+              "duration": 534000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "the response status should be 200",
+            "name": "the response should be 200",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 6000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "the response should contain \"janet.weaver@reqres.in\"",
+            "name": "the response should contain name \"morpheusTestUpdated\"",
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 4000000
             }
           }
         ]

@@ -9,7 +9,7 @@ export default defineConfig({
     video: true,
     screenshotOnRunFailure: true,
     setupNodeEvents(on, config) {
-      const version = config.env.version || 'dev';
+      const version = config.env.version || 'api';
       config.env = require(`./cypress/config/${version}.json`);
       config.baseUrl = config.env.baseUrl;
       const options = {

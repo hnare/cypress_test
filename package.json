@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:run": "cypress run  --record --key 130a5241-a6fd-4f43-a685-db423ffebd78",
+    "cy:run": "cypress run --record --key 130a5241-a6fd-4f43-a685-db423ffebd78",
     "cypress:run:tag": "cypress run --env TAGS=@login --browser chrome",
     "report": "node cucumber-html-report.js",
     "report:clean": "rm -rf cypress/reports/*"

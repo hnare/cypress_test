@@ -10,6 +10,10 @@ Then('the response status should be {int}', (status: number) => {
   });
   
   Then('the response should contain {string}', (text: string) => {
-    cy.get('@response').its('body').should('include', text);
+    cy.get('@response').its('body.data.email').should('include', text);
   });
+
+  Given('I make a POST request to {string}', (url: string) => {
+    cy.request('POST', url).as('response');
+});
   
