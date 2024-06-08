@@ -27,7 +27,7 @@
             "name": "a user navigates to login page",
             "result": {
               "status": "passed",
-              "duration": 1125000000
+              "duration": 912000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "user enters \"test11@tests.com\" and \"Test1234*\"",
             "result": {
               "status": "passed",
-              "duration": 571000000
+              "duration": 545000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "user clicks on submit",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 76000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "the page contains text \"Contact List App\"",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 6000000
             }
           }
         ]
@@ -82,7 +82,7 @@
             "name": "a user navigates to login page",
             "result": {
               "status": "passed",
-              "duration": 525000000
+              "duration": 486000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "user enters \"test1@tests.com\" and \"Test1234*\"",
             "result": {
               "status": "passed",
-              "duration": 535000000
+              "duration": 525000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "user clicks on submit",
             "result": {
               "status": "passed",
-              "duration": 77000000
+              "duration": 75000000
             }
           },
           {
@@ -137,7 +137,7 @@
             "name": "a user navigates to login page",
             "result": {
               "status": "passed",
-              "duration": 504000000
+              "duration": 472000000
             }
           },
           {
@@ -147,7 +147,7 @@
             "name": "user enters \"Invalid@test.com\" and \"password\"",
             "result": {
               "status": "passed",
-              "duration": 533000000
+              "duration": 520000000
             }
           },
           {
@@ -157,7 +157,7 @@
             "name": "user clicks on submit",
             "result": {
               "status": "passed",
-              "duration": 75000000
+              "duration": 72000000
             }
           },
           {
@@ -167,7 +167,7 @@
             "name": "user is presented with error message \"Incorrect username or password\"",
             "result": {
               "status": "passed",
-              "duration": 64000000
+              "duration": 81000000
             }
           }
         ]
