@@ -8,3 +8,7 @@ cypress.env.json
 node_modules
 
 
+cypress/reports
+cypress/reports/*
+cypress/videos
+cypress/videos/*
