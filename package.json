@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
+    "cy:debug": "cypress open",
+
+    "cy:run:ui": "cypress run headed --browser chrome --record --parallel --spec 'cypress/e2e/features/ui/**/*.feature'",   
+    "cy:run:api": "cypress run headed --record  --parallel --spec 'cypress/e2e/features/api/**/*.feature'",
+
     "cy:run": "cypress run --record --key 130a5241-a6fd-4f43-a685-db423ffebd78",
     "cypress:run:tag": "cypress run --env TAGS=@login --browser chrome",
     "report": "node cucumber-html-report.js",

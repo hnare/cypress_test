@@ -26,9 +26,8 @@
             "line": 6,
             "name": "a user navigates to signup page",
             "result": {
-              "status": "failed",
-              "duration": 978000000,
-              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttps://reqres.in/addUser\n\nThe response we received from your web server was:\n\n  > 404: Not Found\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at <unknown> (https://reqres.in/__cypress/runner/cypress_runner.js:131475:76)\n    at visitFailedByErr (https://reqres.in/__cypress/runner/cypress_runner.js:130889:12)\n    at <unknown> (https://reqres.in/__cypress/runner/cypress_runner.js:131458:13)\n    at tryCatcher (https://reqres.in/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://reqres.in/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://reqres.in/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://reqres.in/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://reqres.in/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://reqres.in/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://reqres.in/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Page.navigateTo (cypress/e2e/pages/Page.ts:11:11)\n    at signupPage.goTo (cypress/e2e/pages/signup/signUpPage.ts:18:13)\n    at Context.eval (cypress/e2e/step_definitions/signup/signupSteps.ts:7:9)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 277000000
             }
           },
           {
@@ -58,7 +57,8 @@
             "line": 7,
             "name": "user submits the below details",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1004000000
             }
           },
           {
@@ -67,7 +67,9 @@
             "line": 11,
             "name": "user clicks on Logout",
             "result": {
-              "status": "skipped"
+              "status": "failed",
+              "duration": 3995000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#logout`, but never found it.\n    at Page.clickOn (cypress/e2e/pages/Page.ts:15:11)\n    at loginPage.clickLogout (cypress/e2e/pages/login/loginPage.ts:60:13)\n    at Context.eval (cypress/e2e/step_definitions/login/loginSteps.ts:15:8)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
             }
           }
         ]

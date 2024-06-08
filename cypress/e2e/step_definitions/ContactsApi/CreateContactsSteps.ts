@@ -2,9 +2,10 @@ import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
 import cypress from 'cypress';
 
 
-  Given('I make a POST request to {string}', (url: string) => {
-    cy.request('POST', url,{
-      
+  Given('I make a POST request to {string}', (endpoint: string) => {
+    let baseUri: string  = Cypress.env("baseUri");
+    let uri : string = `${baseUri}${endpoint}`;
+    cy.request('POST', uri,{
         "name": "morpheusTest",
         "job": "leaderTest"
     }).as('response')

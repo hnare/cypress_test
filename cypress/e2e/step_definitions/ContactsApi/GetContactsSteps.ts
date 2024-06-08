@@ -1,8 +1,10 @@
 import { Given, Then } from 'cypress-cucumber-preprocessor/steps';
 import cypress from 'cypress';
 
-Given('I make a GET request to {string}', (url: string) => {
-    cy.request('GET', url).as('response');
+Given('I make a GET request to {string}', (endpoint: string) => {
+  let baseUri: string  = Cypress.env("baseUri");
+  let uri : string = `${baseUri}${endpoint}`;
+    cy.request('GET', uri).as('response');
 });
 
 Then('the response status should be {int}', (status: number) => {

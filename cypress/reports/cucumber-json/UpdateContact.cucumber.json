@@ -27,7 +27,7 @@
             "name": "I make a PUT request to \"/api/users/2\"",
             "result": {
               "status": "passed",
-              "duration": 534000000
+              "duration": 76000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "the response should be 200",
             "result": {
               "status": "passed",
-              "duration": 6000000
+              "duration": 5000000
             }
           },
           {

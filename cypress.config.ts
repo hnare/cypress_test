@@ -5,11 +5,29 @@ const cucumber = require('cypress-cucumber-preprocessor').default;
 const resolve = require('resolve');
 
 export default defineConfig({
+  watchForFileChanges: true,
+  requestTimeout: 10000,
+  trashAssetsBeforeRuns: true,
+  defaultCommandTimeout: 15000,
+  chromeWebSecurity: false,
+  screenshotOnRunFailure: true,
+  modifyObstructiveCode: true,
+  experimentalMemoryManagement: true,
+
+  viewportHeight: 1080,
+  viewportWidth: 1920,
+  video: true,
+
+  env:{
+    baseUri:"https://reqres.in",
+  },
   e2e: {
-    video: true,
-    screenshotOnRunFailure: true,
+    baseUrl: "https://thinking-tester-contact-list.herokuapp.com",
+    retries: {
+      runMode: 2,
+    },
     setupNodeEvents(on, config) {
-      const version = config.env.version || 'api';
+      const version = config.env.version || 'dev';
       config.env = require(`./cypress/config/${version}.json`);
       config.baseUrl = config.env.baseUrl;
       const options = {
