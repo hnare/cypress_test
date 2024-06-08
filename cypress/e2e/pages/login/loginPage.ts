@@ -4,6 +4,7 @@ export class loginPage extends Page{
     constructor() {
         const elements = {
             inputFirstName: '#firstName',
+            inputLastName: '#lastName',
             inputEmailName: '#email',
             inputPassword: '#password',
             submitBtn: '#submit',
@@ -28,6 +29,10 @@ export class loginPage extends Page{
   
     public fillFirstName(userName){
         this.type(this.elements.inputFirstName, userName)
+    }
+
+    public fillLastName(userName){
+        this.type(this.elements.inputLastName, userName)
     }
 
     public fillEmail(userName){

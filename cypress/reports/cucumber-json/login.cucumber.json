@@ -37,7 +37,7 @@
             "name": "user enter a valid \"test11@tests.com\" and \"Test1234*\"",
             "result": {
               "status": "passed",
-              "duration": 568000000
+              "duration": 601000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "user clicks on submit",
             "result": {
               "status": "passed",
-              "duration": 86000000
+              "duration": 79000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "a user navigates to login page",
             "result": {
               "status": "passed",
-              "duration": 468000000
+              "duration": 532000000
             }
           },
           {
@@ -92,7 +92,7 @@
             "name": "user enter a valid \"test1@tests.com\" and \"Test1234*\"",
             "result": {
               "status": "passed",
-              "duration": 554000000
+              "duration": 558000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "user clicks on submit",
             "result": {
               "status": "passed",
-              "duration": 84000000
+              "duration": 75000000
             }
           },
           {

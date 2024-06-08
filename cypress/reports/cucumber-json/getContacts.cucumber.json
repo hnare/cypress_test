@@ -1,0 +1,57 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Example API Test",
+    "line": 1,
+    "id": "example-api-test",
+    "tags": [],
+    "uri": "getContacts.feature",
+    "elements": [
+      {
+        "id": "example-api-test;verify-api-response",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify API Response",
+        "tags": [
+          {
+            "name": "@api",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I make a GET request to \"/posts1\"",
+            "result": {
+              "status": "passed",
+              "duration": 1077000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "the response status should be 200",
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "the response should contain \"title\"",
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

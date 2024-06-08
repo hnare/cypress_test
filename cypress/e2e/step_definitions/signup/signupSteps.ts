@@ -4,7 +4,7 @@ import { signupPage } from '../../pages/signup/signUpPage';
 const signup = new signupPage();
 
 Given('a user navigates to signup page', () => {
-  signup.("/addUser");
+  signup.goTo("/addUser");
 });
 
 When("user submits the below details", (dataTable: any) => {

@@ -21,5 +21,7 @@ export default defineConfig({
       return config;
     },
     specPattern: "cypress/e2e/**/*.feature",
+    fixturesFolder: "cypress/fixtures",
+    projectId: "bypx6w",
   },
 });

@@ -1,10 +1,10 @@
+Feature: Example API Test
 
-@API
-Feature: Getting Contacts List API
 
-  Scenario: Getting Customers API
-    Given authorization token was requested
-    When requesting customers API
-    Then "Customers" response should contain status "200"
-    And "Customers" response should be successful
-    And customers response body should be successful
+@api
+  Scenario: Verify API Response
+    Given I make a GET request to "/posts1"
+    Then the response status should be 200
+    And the response should contain "title"
+
+    # And the response should match the fixture "contact.json"

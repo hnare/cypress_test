@@ -4,7 +4,7 @@ import {loginPage} from "../../pages/login/loginPage"
 const login = new loginPage();
 
 Given('a user navigates to login page', () => {
-  login.navigateTo("/login");
+  login.goTo("/login");
 });
 
 When('user clicks on submit', () => {
