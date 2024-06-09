@@ -13,7 +13,8 @@
     "cy:run:api": "cypress run --headed --record --key b66ac192-23ef-4bd0-a0ef-3ace7fb58309 --parallel --spec 'cypress/e2e/features/api/**/*.feature'",
 
     "cy:run": "cypress run --record --key 130a5241-a6fd-4f43-a685-db423ffebd78",
-    "cypress:run:tag": "cypress run --env TAGS=@login --browser chrome",
+
+    "cypress:run:tag": "cypress run --spec 'cypress/e2e/features/ui/**/*.feature' --env TAGS=@test --browser chrome",
     "report": "node cucumber-html-report.js",
     "report:clean": "rm -rf cypress/reports/*"
   },
