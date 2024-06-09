@@ -1,24 +1,21 @@
 name: Cypress Test CI
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        shell: bash
+  cypress-run:
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
         with:
-            node-version: 20
-      - uses: cypress-io/github-action@v6
-        with:
-            record: true
-            working-directory: .
-            install: true
-            command: npm run cy:run:ui
+          build: npm run build
+          start: npm start
+          command: npm run cy:run:ui
 
 # jobs:
 #   cypress-run:

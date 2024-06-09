@@ -27,9 +27,9 @@ export default defineConfig({
       runMode: 2,
     },
     setupNodeEvents(on, config) {
-      const version = config.env.version || 'dev';
-      config.env = require(`./cypress/config/${version}.json`);
-      config.baseUrl = config.env.baseUrl;
+      // const version = config.env.version || 'dev';
+      // config.env = require(`./cypress/config/${version}.json`);
+      // config.baseUrl = config.env.baseUrl;
       const options = {
         ...browserify.defaultOptions,
         typescript: resolve.sync('typescript', { baseDir: config.projectRoot }),
