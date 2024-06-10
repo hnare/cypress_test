@@ -20,6 +20,9 @@ jobs:
       - name: Run Cypress tests
         run: |
          npm run cy:run:ui
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          TERM: xterm
 
       # # Install npm dependencies, cache them correctly
       # # and run all Cypress tests
