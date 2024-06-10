@@ -24,10 +24,12 @@
   "license": "ISC",
   "devDependencies": {
     "@cypress/browserify-preprocessor": "^3.0.2",
+    "@types/node": "^20.14.2",
     "cypress": "^13.11.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "faker": "^5.5.3",
     "multiple-cucumber-html-reporter": "^3.6.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
   "cypress-cucumber-preprocessor": {
@@ -40,7 +42,7 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber",
       "integrationFolder": "cypress/e2e",
-      "testFiles": "cypress/e2e/pages/**/*.ts"    
+      "testFiles": "cypress/e2e/pages/**/*.ts"
     }
   }
 }

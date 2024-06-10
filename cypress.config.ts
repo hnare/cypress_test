@@ -12,7 +12,6 @@ export default defineConfig({
   chromeWebSecurity: false,
   screenshotOnRunFailure: true,
   modifyObstructiveCode: true,
-  experimentalMemoryManagement: true,
 
   viewportHeight: 1080,
   viewportWidth: 1920,
