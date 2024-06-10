@@ -34,8 +34,7 @@ export default defineConfig({
 
       return config;
     },
-    specPattern: "cypress/e2e/**/*.feature",
-    fixturesFolder: "cypress/fixtures",
+    specPattern: "cypress/e2e/features/**/*.feature",
     projectId: "q55yj7",  
   },
 });
