@@ -42,7 +42,8 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber",
       "integrationFolder": "cypress/e2e",
-      "testFiles": "cypress/e2e/pages/**/*.ts"
+      "testFiles": "cypress/e2e/pages/**/*.ts",
+      "projectRoot": "cypress"
     }
   }
 }
