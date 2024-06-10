@@ -27,7 +27,7 @@
             "name": "a user navigates to signup page",
             "result": {
               "status": "passed",
-              "duration": 367000000
+              "duration": 1424000000
             }
           },
           {
@@ -58,7 +58,7 @@
             "name": "user submits the below details",
             "result": {
               "status": "passed",
-              "duration": 995000000
+              "duration": 1049000000
             }
           },
           {
@@ -68,7 +68,7 @@
             "name": "user clicks on Logout",
             "result": {
               "status": "passed",
-              "duration": 635000000
+              "duration": 679000000
             }
           }
         ]

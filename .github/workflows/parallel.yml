@@ -13,7 +13,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4
         with:
-          command: cy:run:ui
+          command: npm run cy:run:ui
 
 # jobs:
 #   cypress-run:
