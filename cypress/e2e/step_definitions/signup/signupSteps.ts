@@ -1,7 +1,10 @@
 import {Given, When, Then} from 'cypress-cucumber-preprocessor/steps';
 import { signupPage } from '../../pages/signup/signUpPage';
+import cypress from 'cypress';
 
 const signup = new signupPage();
+const faker = require('faker');
+
 
 Given('a user navigates to signup page', () => {
   signup.goTo("/addUser");
@@ -11,7 +14,8 @@ When("user submits the below details", (dataTable: any) => {
   const data = dataTable.hashes()[0]; 
   signup.fillFirstName(data['First Name']);
   signup.fillLastName(data['Last Name']);
-  signup.fillEmail(data['email']);
+  // cy.get('#email').type(faker.internet.email())
+    signup.fillEmail(faker.internet.email());
   signup.fillPassword(data['password']);
   signup.clickSubmit();
 });

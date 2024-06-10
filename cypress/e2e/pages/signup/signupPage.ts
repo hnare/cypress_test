@@ -1,5 +1,6 @@
 import {Page} from "../Page";
 
+
 export class signupPage extends Page{ 
     constructor() {
         const elements = {

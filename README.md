@@ -1,12 +1,13 @@
 # cypress_test
 
 Prerequisites :
-   1. Node installed
+   1. Node.js installed
    2. Clone the project : git@github.com:hnare/cypress_test.git
 
 
 How to Install the project
-  1. Command : npm install
+
+  1. Navigate to the root folder of project and run the command npm install
 
 How to run the commands:
   1. Run the UI tests locally : npm run cy:run:ui:local
