@@ -1,6 +1,5 @@
 import {Given, When, Then} from 'cypress-cucumber-preprocessor/steps';
-import { signupPage } from '../../pages/signup/signUpPage';
-import cypress from 'cypress';
+import { signupPage } from '../../pages/signup/signupPage';
 
 const signup = new signupPage();
 const faker = require('faker');

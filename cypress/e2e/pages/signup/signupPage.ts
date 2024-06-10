@@ -1,5 +1,4 @@
-import {Page} from "../Page";
-
+import { Page } from "../page";
 
 export class signupPage extends Page{ 
     constructor() {
