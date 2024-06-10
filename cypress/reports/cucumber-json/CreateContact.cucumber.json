@@ -26,9 +26,8 @@
             "line": 6,
             "name": "I make a POST request to \"/api/users\"",
             "result": {
-              "status": "failed",
-              "duration": 30278000000,
-              "error_message": "CypressError: `cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: POST\nURL: https://thinking-tester-contact-list.herokuapp.com/api/users\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request\n    at <unknown> (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:132777:70)\n    at tryCatcher (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:1807:23)\n    at <unknown> (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:4186:41)\n    at tryCatcher (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (https://thinking-tester-contact-list.herokuapp.com/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.eval (cypress/e2e/step_definitions/ContactsApi/CreateContactsSteps.ts:6:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 231000000
             }
           },
           {
@@ -37,7 +36,8 @@
             "line": 7,
             "name": "the response should be 201",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 9000000
             }
           },
           {
@@ -46,7 +46,8 @@
             "line": 8,
             "name": "the response should contain name \"morpheusTest\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 5000000
             }
           }
         ]

@@ -27,7 +27,7 @@
             "name": "I make a GET request to \"/api/users/2\"",
             "result": {
               "status": "passed",
-              "duration": 53000000
+              "duration": 107000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "the response status should be 200",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 8000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "the response should contain \"janet.weaver@reqres.in\"",
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 5000000
             }
           }
         ]

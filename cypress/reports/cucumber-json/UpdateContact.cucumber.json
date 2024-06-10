@@ -27,7 +27,7 @@
             "name": "I make a PUT request to \"/api/users/2\"",
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 131000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "the response should be 200",
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 9000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "name": "the response should contain name \"morpheusTestUpdated\"",
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 5000000
             }
           }
         ]
