@@ -38,7 +38,9 @@
       "generate": true,
       "outputFolder": "cypress/reports/cucumber-json",
       "filePrefix": "",
-      "fileSuffix": ".cucumber"
+      "fileSuffix": ".cucumber",
+      "integrationFolder": "cypress/e2e",
+      "testFiles": "cypress/e2e/pages/**/*.ts"    
     }
   }
 }
