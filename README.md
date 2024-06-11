@@ -15,3 +15,4 @@ How to run the commands:
   3. Run a specific test using tags : npm run cypress:run:tag
   4. Create reports : npm run report
  
+ 
